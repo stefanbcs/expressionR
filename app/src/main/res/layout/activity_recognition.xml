@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".RecognitionActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#030322"
+        android:weightSum="1"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.15"
+            android:background="#030322"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#030322"
+            app:srcCompat="@android:drawable/stat_sys_upload" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="0.7"
+            android:background="#FFFFFF"
+            />
+    </TableRow>
+
+
+    <ImageView
+        android:id="@+id/chosen_image"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:layout_height="0dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="3"
+        android:background="#030322">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Score"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Time"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Class"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/scoreInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/timeInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/classInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:layout_weight="1"/>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:weightSum="3"
+        android:background="#030322">
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/recognize_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="GET RESULTS"
+            android:textSize="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            />
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExpressionR</string>
+
+    <string-array name="modele">
+        <item>NL-CNN_FER2013</item>
+        <item>L-CNN_FER2013</item>
+        <item>MobileNet_FER2013</item>
+        <item>NL-CNN_JAFFE</item>
+        <item>L-CNN_JAFFE</item>
+        <item>MobileNet_JAFFE</item>
+    </string-array>
+</resources>
