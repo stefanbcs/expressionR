@@ -3,7 +3,7 @@
 
 Android application developed with Java and XML(for layouts) that integrates deep learning models for facial expression recognition problem.
 
-###Features:
+### Features:
 - upload images from gallery
 - upload a photo taken in real time with the phone's camera
 - select from multiple recognition models
